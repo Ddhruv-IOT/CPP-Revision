@@ -72,6 +72,17 @@ int main()
     // std::cout << "/n" << *ptr_null_2 << "\n";
     // Printing the value of a null pointer will result in a segmentation fault
 
+    // different ways to initialize a pointer
+    int i = 5;
+    int *q_ptr = &i;
+    int *late_ptr = 0;
+    late_ptr = &i;
+
+    std::cout << "\n"
+              << "The address contained in q_ptr and late_ptr is: " << q_ptr << " " << late_ptr << "\n";
+
+    std::cout << "\n"
+              << "The value of q_ptr and late_ptr is: " << *q_ptr << " " << *late_ptr << "\n";
     
 
 
