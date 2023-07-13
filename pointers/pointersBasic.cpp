@@ -33,20 +33,34 @@ int main()
 
     char ch = 'A';
     char *ptr_ch = &ch;
-    std::cout << "\n" << "The value of ch is: " << ch << "\n";
+    std::cout << "\n"
+              << "The value of ch is: " << ch << "\n";
     std::cout << "The Address of ch is: " << &ch << "\n";
     // forcing the compiler to treat the address of ch as a void pointer
-    std::cout << "The Address of ch is: " <<  static_cast<void*>(&ch) << "\n";
+    std::cout << "The Address of ch is: " << static_cast<void *>(&ch) << "\n";
     std::cout << "The value of ptr_ch is: " << ptr_ch << "\n";
     std::cout << "The value of *ptr_ch is: " << *ptr_ch << "\n";
 
-
     float f = 10.5;
     float *ptr_f = &f;
-    std::cout << "\n" << "The value of f is: " << f << "\n";
+    std::cout << "\n"
+              << "The value of f is: " << f << "\n";
     std::cout << "The Address of f is: " << &f << "\n";
     std::cout << "The value of ptr_f is: " << ptr_f << "\n";
     std::cout << "The value of *ptr_f is: " << *ptr_f << "\n";
+
+    // Pointer Increment and Decrement
+    std::cout << "\n";
+
+    int x = 10;
+    int *new_ptr = &x;
+    std::cout << "The value of x is: " << x << "\n";
+    std::cout << "The value of x using new_ptr is: " << *new_ptr << "\n";
+    x++;
+    std::cout << "The value of updated x is: " << x << "\n";
+    std::cout << "The value of updated x using new_ptr is: " << *new_ptr << "\n";
+    
+
 
     return 0;
 }
