@@ -34,9 +34,19 @@ int main()
     char ch = 'A';
     char *ptr_ch = &ch;
     std::cout << "\n" << "The value of ch is: " << ch << "\n";
-    std::cout << "The value of ptr_ch is: " << ptr_ch << "\n";
     std::cout << "The Address of ch is: " << &ch << "\n";
-    std::cout << "The Address of ptr_ch is: " << &ptr_ch << "\n";
+    // forcing the compiler to treat the address of ch as a void pointer
+    std::cout << "The Address of ch is: " <<  static_cast<void*>(&ch) << "\n";
+    std::cout << "The value of ptr_ch is: " << ptr_ch << "\n";
+    std::cout << "The value of *ptr_ch is: " << *ptr_ch << "\n";
+
+
+    float f = 10.5;
+    float *ptr_f = &f;
+    std::cout << "\n" << "The value of f is: " << f << "\n";
+    std::cout << "The Address of f is: " << &f << "\n";
+    std::cout << "The value of ptr_f is: " << ptr_f << "\n";
+    std::cout << "The value of *ptr_f is: " << *ptr_f << "\n";
 
     return 0;
 }
