@@ -59,6 +59,19 @@ int main()
     x++;
     std::cout << "The value of updated x is: " << x << "\n";
     std::cout << "The value of updated x using new_ptr is: " << *new_ptr << "\n";
+
+    std::cout << "Size of x is: " << sizeof(x) << "\n";
+    std::cout << "Size of new_ptr is: " << sizeof(new_ptr) << "\n";
+
+    // In majority of cases, size of pointer is 8 bytes (64 bits) in 64-bit system irrespective of data type like int, char, etc.
+
+    // Null Pointer
+    int *ptr_null = NULL;
+    int *ptr_null_2 = 0;
+
+    // std::cout << "/n" << *ptr_null_2 << "\n";
+    // Printing the value of a null pointer will result in a segmentation fault
+
     
 
 
