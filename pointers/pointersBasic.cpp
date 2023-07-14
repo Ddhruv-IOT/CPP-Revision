@@ -59,9 +59,13 @@ int main()
     x++;
     std::cout << "The value of updated x is: " << x << "\n";
     std::cout << "The value of updated x using new_ptr is: " << *new_ptr << "\n";
+    (*new_ptr)++; // the brackets are necessary otherwise it will increment the address
+    std::cout << "Incrementing the value of x using new_ptr: " <<  *new_ptr << "\n";
+    std::cout << "The value of updated x is: " << x << "\n";
 
     std::cout << "Size of x is: " << sizeof(x) << "\n";
     std::cout << "Size of new_ptr is: " << sizeof(new_ptr) << "\n";
+    
 
     // In majority of cases, size of pointer is 8 bytes (64 bits) in 64-bit system irrespective of data type like int, char, etc.
 
@@ -83,6 +87,13 @@ int main()
 
     std::cout << "\n"
               << "The value of q_ptr and late_ptr is: " << *q_ptr << " " << *late_ptr << "\n";
+    
+    // Copying pointers
+    int *ptr_copy = q_ptr; // provides the address of i to ptr_copy
+    cout << "\n"
+         << "The value of ptr_copy is: " << *ptr_copy << "\n" << "and the address is: " << ptr_copy << "\n";
+    cout << "\n"
+            << "The value of q_ptr is: " << *q_ptr << "\n" << "and the address is: " << q_ptr << "\n";
     
 
 
