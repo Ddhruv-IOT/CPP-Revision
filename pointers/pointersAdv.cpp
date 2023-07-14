@@ -8,7 +8,7 @@ int main()
     std::cout << "The address of first memory block is: " << arr << "\n";
     std::cout << "The address of first memory block can also be given by: " << &arr << "\n";
     std::cout << "The address of first memory block can also be given by: " << &arr[0] << "\n";
-    
+
     std::cout << "\n";
     std::cout << "The value at first memory block is: " << *arr << "\n";
     std::cout << "The value at first memebry block can also be given by: " << arr[0] << "\n";
@@ -21,7 +21,14 @@ int main()
     // arr[i] = *(arr + i) = *(i + arr) = i[arr]
     // so yes, i[arr] is technically valid C++ code, and it will work exactly the same as arr[i].
 
-    std::cout <<"i[arr] is same as arr[i] \n"<< "arr[i]: " << arr[3]  << "\n" << "i[arr]: " << 3[arr];
+    std::cout << "i[arr] is same as arr[i] \n"
+              << "arr[i]: " << arr[3] << "\n"
+              << "i[arr]: " << 3 [arr];
 
-
+    int arr2[] = {10, 30, 70};
+    int *p = &arr2[0];
+    std::cout << "\n\n";
+    std::cout << "The address of first element: " << p << "\n";     // address of first element
+    std::cout << "The value of first element: " << *p << "\n";      // value of first element
+    std::cout << "The address of pointer variable: " << &p << "\n"; // address of pointer variable
 }
