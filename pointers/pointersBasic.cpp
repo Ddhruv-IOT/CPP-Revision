@@ -90,10 +90,20 @@ int main()
     
     // Copying pointers
     int *ptr_copy = q_ptr; // provides the address of i to ptr_copy
-    cout << "\n"
+    std::cout << "\n"
          << "The value of ptr_copy is: " << *ptr_copy << "\n" << "and the address is: " << ptr_copy << "\n";
-    cout << "\n"
+    std::cout << "\n"
             << "The value of q_ptr is: " << *q_ptr << "\n" << "and the address is: " << q_ptr << "\n";
+        
+    // pointer address increment
+    std::cout << "\n"; 
+    std::cout << "Address of q_ptr is: " << q_ptr << "\n";
+    // The later address is 4 bytes ahead of the previous address
+    std::cout << "Adding 1 to address of q_ptr, the new address is: " << q_ptr + 1 << "\n";
+    // The value at new address may change in future!
+    // std::cout << "Checking the value at new address: " << *(q_ptr+1) << "\n";
+    // std::cout <<"The address give is same as of new_ptr: " << new_ptr << "\n" <<"The value at new_ptr is: " << *new_ptr << "\n";
+    
     
 
 
