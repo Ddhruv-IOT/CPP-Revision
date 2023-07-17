@@ -16,6 +16,14 @@ void square(int *p)
     // cout << *p << "\n";
 }
 
+// Function for Question 3
+void swap(char *x, char *y)
+{
+    char *t = x;
+    x = y;
+    y = t;
+}
+
 int main()
 {
 
@@ -28,4 +36,15 @@ int main()
     int b = 10;
     square(&b);
     cout << b << "\n\n";
+
+    // Question 3
+    char *x = "ninjasquiz";
+    char *y = "codingninjas";
+    char *t;
+    swap(x, y);
+    cout << x << " " << y <<" ";
+    t = x;
+    x = y;
+    y = t;
+    cout << x << " " << y << "\n\n";
 }
