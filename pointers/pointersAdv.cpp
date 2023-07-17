@@ -52,6 +52,11 @@ int main()
     std::cout << "if we try to access the adrress using &carr[0], it will again print the whole: " << &carr[0] << "\n";
     std::cout << "if we try to access the adrress using &carr, it will print the address of first element: " << &carr << "\n";
 
+    std::cout <<"It will print chars from given index till end or terminating Char: " << &carr[1] << "\n";
+    std::cout << "Its same as dereferencing carr[0]: " << *(carr) << "\n";
+    std::cout <<"Its same as dereferencing carr[1] : " << *(carr+1) << "\n";
+    std::cout << "Its same as dereferencing carr[i] and adding some value to ASCII: "<<*(carr+1)+1 << "\n\n";
+
     // We know that char arrya terminates at null character, '\0'
     // Here, the address of temp is pointed by p6, and the value of temp is 'z'
     // when we print p6, it will print the value till it finds '\0'
