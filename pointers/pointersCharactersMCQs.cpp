@@ -44,6 +44,14 @@ int main()
 
     for (int i = 0; st1[i] != '\0'; i++)
     {
-        cout << st1[i] << *(st1)+i << *(i + st1) << i[st1] << "\n";
+        cout << st1[i] << *(st1)+i << *(i + st1) << i[st1];
     }
+    cout << "\n\n";
+
+    float arr1[5] = {12.5, 10.0, 13.5, 90.5, 0.5};
+    float *ptr1 = &arr1[0];
+    float *ptr2 = ptr1 + 3;
+    cout << *ptr2 << "\n";
+    cout << ptr2 - ptr1 << "\n\n"; // use some basic maths lol :P
+
 }
