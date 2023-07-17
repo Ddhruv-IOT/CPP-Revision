@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// question 7 function
+void changeSign(int *p)
+{
+    *p = (*p) * -1;
+}
+
 int main()
 {
     char s[] = "hello";
@@ -44,7 +50,7 @@ int main()
 
     for (int i = 0; st1[i] != '\0'; i++)
     {
-        cout << st1[i] << *(st1)+i << *(i + st1) << i[st1];
+        cout << st1[i] << *(st1) + i << *(i + st1) << i[st1];
     }
     cout << "\n\n";
 
@@ -54,4 +60,7 @@ int main()
     cout << *ptr2 << "\n";
     cout << ptr2 - ptr1 << "\n\n"; // use some basic maths lol :P
 
+    int a = 10;
+    changeSign(&a);
+    cout << a << "\n\n";
 }
