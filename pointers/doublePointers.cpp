@@ -10,5 +10,17 @@ int main() {
     int*k = &a; // This is also valid
     cout << p << " " << q << " " << z << " " << k << "\n\n";
 
+    // Double pointers
+    int i = 10;
+    int *ptr = &i;
+    int **ptr_ptr = &ptr;
+
+    cout << i << " " << &i << "\n";
+    cout << *ptr << " " << ptr << " " << &ptr << "\n";
+    cout << **ptr_ptr << " " << ptr_ptr << " " << &ptr_ptr << "\n";
+    cout << &ptr_ptr << "->" << &ptr << "->" << &i << "\n\n";
+
+
+
 
 }
