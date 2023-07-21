@@ -46,6 +46,30 @@ int main() {
     // *p5 = first5; // This will give a segmentation fault
     // cout << *p5 << "\n\n"; // gives segmentation fault
 
+    // question 5
+    int first6 = 8;
+    int second6 = 11;
+    int *third = &second6;
+    first6 = *third;
+    *third += 2;
+    cout << first6 << " " << second6 << "\n\n";
+
+    //question 6
+    float f = 12.5;
+    float pf = 21.5;
+    float *ptrf = &f;
+    (*ptrf)++;
+    *ptrf = pf;
+    cout << f << " " << pf << " " << *ptrf << "\n\n";
+
+    // question 7
+    int arr[5];
+    int *p7;
+    cout << sizeof(arr) << " " << sizeof(p7) << "\n\n";
+
+    // question 8
+    int arr2[] = {1, 2, 3, 4};
+    cout << *(arr2) << " " << *(arr2 + 1) << "\n\n";
 
 
 }
