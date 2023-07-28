@@ -103,5 +103,10 @@ int main() {
     ch++;
     cout << ch << " " << *ptr_ch << endl;
 
+    // question 17
+    char arr_ch[] = "abcde";
+    char *ptr_ch2 = &arr_ch[0]; // will give the chars from index provided till '/0'
+    cout << ptr_ch2 << endl;
+
 
 }
