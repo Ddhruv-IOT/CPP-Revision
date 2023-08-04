@@ -71,5 +71,31 @@ int main() {
     int arr2[] = {1, 2, 3, 4};
     cout << *(arr2) << " " << *(arr2 + 1) << "\n\n";
 
+    // question 9
+    int arr3[] = {10, 20, 30};
+    cout << arr3 << " " << &arr3 << "\n\n";
+
+    // question 10
+    int arr4[6] = {10, 20, 30};
+    cout << (arr4 + 1) << " " << "\n\n"; //prints the address of the second element
+
+    // question 11
+    int arr5[6] = {11, 12, 31, 14, 15};
+    cout << arr << " " << &arr << endl; //prints the address of the first element
+
+    // question 12
+    cout << (arr + 1) << "  " << &arr[1] << " " << &1[arr] << "\n\n"; //prints the address of the second element
+
+    // question 13
+    int *px = arr5;
+    cout << px[2] << endl; //prints the third element
+
+    // question 14
+    cout << *arr5 << " " << *(arr5 + 3) << endl;
+
+    // question 15
+    // int *px2 = arr5++; // arr cant be updated as it in symbol table
+    // cout << *px2 << endl;
+
 
 }
