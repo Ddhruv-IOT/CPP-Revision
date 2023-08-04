@@ -126,4 +126,20 @@ int main() {
     int i20 = 10;
     update(&i20);
     cout << i20 << endl;
+
+    // question 21 double pointers
+    int first_21 = 10;
+    int *ptr_21 = &first_21;
+    int **q_21 = &ptr_21;
+    int second_21 = (**q_21)++ + 9;
+    cout << first_21 << " " << second_21 << endl;
+
+    // question 22
+    int first_22 = 100;
+    int *ptr_22 = &first_22;
+    int **q_22 = &ptr_22;
+    int second_22 = ++(**q_22);
+    int *r_22 = *q_22;
+    ++(*r_22);
+    cout << first_22 << " " << second_22 << endl;
 }
