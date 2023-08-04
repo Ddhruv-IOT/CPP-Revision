@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+// function for Question 20
+void update(int *p) {
+    *p = (*p) * 2;
+}
+
 int main() {
 
     int a = 9;
@@ -108,5 +113,17 @@ int main() {
     char *ptr_ch2 = &arr_ch[0]; // will give the chars from index provided till '/0'
     cout << ptr_ch2 << endl;
 
+    // question 18
+    *ptr_ch2++;
+    cout << ptr_ch2 << endl;
 
+    // question 19
+    char arr_ch2[] = "gabbar";
+    char *ptr_ch3 = arr_ch2;
+    cout << arr_ch2[0] << " " << ptr_ch3[0] << endl;
+
+    // question 20
+    int i20 = 10;
+    update(&i20);
+    cout << i20 << endl;
 }
