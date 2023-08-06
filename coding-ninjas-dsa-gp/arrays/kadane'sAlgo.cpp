@@ -21,5 +21,9 @@ int main()
             currSum = 0;
         }
     }
+    if (maxSum < 0)
+    { // if all elements are negative
+        maxSum = 0;
+    }
     cout << "The maximum subarray sum is: " << maxSum << endl;
 }
