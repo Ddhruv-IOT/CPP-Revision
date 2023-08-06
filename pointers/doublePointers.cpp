@@ -6,6 +6,11 @@ void update(int *p) {
     *p = (*p) * 2;
 }
 
+// function for last question
+void increment(int **p) {
+    ++(**p);
+}
+
 int main() {
 
     int a = 9;
@@ -142,4 +147,10 @@ int main() {
     int *r_22 = *q_22;
     ++(*r_22);
     cout << first_22 << " " << second_22 << endl;
+
+    // last question
+    int num = 110;
+    int *ptr_num = &num;
+    increment(&ptr_num);
+    cout << num << endl;
 }
